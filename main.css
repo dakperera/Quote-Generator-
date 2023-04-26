@@ -1,0 +1,78 @@
+:root{
+    --base-color1:gray;
+    --base-color2:white;
+    --base-color3:black;
+  }
+  
+  body{
+    height:100vh;
+    margin:0;
+    overflow:hidden;
+    background:var(--base-color3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #quote-box{
+    width: 34%;
+    /*height: 10%;*/
+    background:var(--base-color2);
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap:wrap;
+    min-height:10em;
+    height:auto;
+    align-items:stretch;
+    padding:2em;
+    color:var(--base-color1);
+    border-radius:6px;
+    
+  }
+  #text{
+    width:100%;
+    text-align:center;
+    margin-bottom:1em;
+    font-size:30px;
+    font-family:Arial;
+    color:var(--base-color3);
+    
+  }
+  #author{
+    width:100%;
+    text-align:end;
+    margin-bottom:1em;
+    font-size:18px;
+    color:var(--base-color3);
+  }
+  #buttons{
+    width:100%;
+    display: grid;
+    grid-template-columns: auto auto 60%;
+    grid-column-gap:5px;
+  }
+  .thebuttons{
+    background:var(--base-color3);
+    color:white;
+    border-radius:6px;
+  }
+  .quote{
+    grid-column:3/4;
+    justify-self:end;
+  }
+  
+  #twitter{
+    width:3em;
+    height:3em;
+    
+  }
+  #tumbler{
+    width:3em;
+    height:3em;  
+    
+  }
+  #new-quote{
+    width:7em;
+    height: 3em;
+    
+  }
